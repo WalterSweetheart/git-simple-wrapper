@@ -80,6 +80,7 @@ then
     fi
 fi
 
+echo "GSW -- git simple wrapper by WalterSweetheart"                                                    >&2
 echo "Usage: gsw [command]"                                                                             >&2
 echo "           set <setting> to <value>  -- sets setting to value in git config globally"             >&2
 echo "           show [what]"                                                                           >&2
