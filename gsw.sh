@@ -73,6 +73,10 @@ then
     then
         eval "git remote add \"$5\" \"$3\""
         exit 0
+    elif [[ "$1" == "push" ]]
+    then
+        eval "git push"
+        exit 0
     fi
 fi
 
@@ -94,4 +98,5 @@ echo "                major <message>  -- increases major version and makes comm
 echo "                minor <message>  -- increases minor version and makes commit with message"        >&2
 echo "                sub   <message>  -- increases sub version and makes commit with message"          >&2
 echo "           connect to <remote> as <name>  -- connects to remote as name"                          >&2
+echo "           push  -- push changes to origin"                                                       >&2
 exit 1
