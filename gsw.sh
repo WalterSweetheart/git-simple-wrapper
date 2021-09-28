@@ -69,6 +69,10 @@ then
         eval "git add -A"
         eval "git commit -m \"$NEW_VERSION_MAJOR.$NEW_VERSION_MINOR.$NEW_VERSION_SUB\" -m \"$3\" --allow-empty"
         exit 0
+    elif [[ "$1" == "connect" ]] && [[ "$2" == "to" ]] && [[ -n "$3" ]] && [[ "$4" == "as" ]] && [[ -n "$5" ]]
+    then
+        eval "git remote add \"$5\" \"$3\""
+        exit 0
     fi
 fi
 
@@ -89,4 +93,5 @@ echo "           next [type]"                                                   
 echo "                major <message>  -- increases major version and makes commit with message"        >&2
 echo "                minor <message>  -- increases minor version and makes commit with message"        >&2
 echo "                sub   <message>  -- increases sub version and makes commit with message"          >&2
+echo "           connect to <remote> as <name>  -- connects to remote as name"                          >&2
 exit 1
