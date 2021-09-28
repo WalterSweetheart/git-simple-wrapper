@@ -72,6 +72,7 @@ then
     elif [[ "$1" == "connect" ]] && [[ "$2" == "to" ]] && [[ -n "$3" ]] && [[ "$4" == "as" ]] && [[ -n "$5" ]]
     then
         eval "git remote add \"$5\" \"$3\""
+        eval "git push --set-upstream origin main -- force"
         exit 0
     elif [[ "$1" == "push" ]]
     then
