@@ -81,7 +81,6 @@ echo "           add [type]"                                                    
 echo "               feat     <message>  -- adds sub feat commit"                                       >&2
 echo "               fix      <message>  -- adds sub fix commit"                                        >&2
 echo "               docs     <message>  -- adds sub docs commit"                                       >&2
-echo "               fix      <message>  -- adds sub fix commit"                                        >&2
 echo "               style    <message>  -- adds sub style commit"                                      >&2
 echo "               refactor <message>  -- adds sub refactor commit"                                   >&2
 echo "               test     <message>  -- adds sub test commit"                                       >&2
