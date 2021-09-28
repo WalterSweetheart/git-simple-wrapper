@@ -78,12 +78,16 @@ echo "           show [what]"                                                   
 echo "                settings  -- shows settings list"                                                 >&2
 echo "                <setting>  -- shows setting"                                                      >&2
 echo "           add [type]"                                                                            >&2
-echo "               feat     <message>  -- adds subversion feat commit"                                >&2
-echo "               fix      <message>  -- adds subversion fix commit"                                 >&2
-echo "               docs     <message>  -- adds subversion docs commit"                                >&2
-echo "               fix      <message>  -- adds subversion fix commit"                                 >&2
-echo "               style    <message>  -- adds subversion style commit"                               >&2
-echo "               refactor <message>  -- adds subversion refactor commit"                            >&2
-echo "               test     <message>  -- adds subversion test commit"                                >&2
-echo "               chore    <message>  -- adds subversion chore commit"                               >&2
+echo "               feat     <message>  -- adds sub feat commit"                                       >&2
+echo "               fix      <message>  -- adds sub fix commit"                                        >&2
+echo "               docs     <message>  -- adds sub docs commit"                                       >&2
+echo "               fix      <message>  -- adds sub fix commit"                                        >&2
+echo "               style    <message>  -- adds sub style commit"                                      >&2
+echo "               refactor <message>  -- adds sub refactor commit"                                   >&2
+echo "               test     <message>  -- adds sub test commit"                                       >&2
+echo "               chore    <message>  -- adds sub chore commit"                                      >&2
+echo "           next [type]"                                                                           >&2
+echo "                major <message>  -- increases major version and makes commit with message"        >&2
+echo "                minor <message>  -- increases minor version and makes commit with message"        >&2
+echo "                sub   <message>  -- increases sub version and makes commit with message"          >&2
 exit 1
