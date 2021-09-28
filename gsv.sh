@@ -24,7 +24,7 @@ then
     elif [[ "$1" == "init" ]]
     then
         eval "git init"
-        eval "git add *"
+        eval "git add -A"
         eval "git commit -m \"0.0.0\" -m \"Initial commit\""
         exit 0
     elif [[ "$1" == "add" ]] && [[ -n "$3" ]]
@@ -39,7 +39,7 @@ then
            [[ "$2" == "test"     ]] ||
            [[ "$2" == "chore"    ]]
         then
-            eval "git add *"
+            eval "git add -A"
             eval "git commit -m \"$NEW_VERSION\" -m \"$2: $3\""
             exit 0
         fi
@@ -66,7 +66,7 @@ then
             echo "Error: unknown command" >&2
             exit 1
         fi
-        eval "git add *"
+        eval "git add -A"
         eval "git commit -m \"$NEW_VERSION_MAJOR.$NEW_VERSION_MINOR.$NEW_VERSION_SUB\" -m \"$3\" --allow-empty"
         exit 0
     fi
