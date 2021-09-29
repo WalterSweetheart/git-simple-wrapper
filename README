@@ -17,4 +17,3 @@ gsw
         break <message>  -- makes major break commit and pushes it
         feat  <message>  -- makes minor feat commit and pushes it
         fix   <message>  -- makes sub fix commit and pushes it
-        docs  <message>  -- makes docs commit and pushes it
