@@ -51,8 +51,7 @@ then
     elif [ "$1" = "add" ] &&
          ( [ "$2" = "break" ] ||
            [ "$2" = "feat"  ] ||
-           [ "$2" = "fix"   ] ||
-           [ "$2" = "docs"  ] ) &&
+           [ "$2" = "fix"   ] ) &&
          [ -n "$3" ]
     then
         VERSION=$( git log -1 --pretty=%B | head -n 1 )
@@ -97,4 +96,4 @@ echo "           add"                                                           
 echo "               break <message>  -- makes major break commit and pushes it"                                    >&2
 echo "               feat  <message>  -- makes minor feat commit and pushes it"                                     >&2
 echo "               fix   <message>  -- makes sub fix commit and pushes it"                                        >&2
-echo "               docs  <message>  -- makes docs commit and pushes it"                                           >&2
+exit 1
