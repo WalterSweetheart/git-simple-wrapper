@@ -76,6 +76,8 @@ then
         VERSION="$VERSION_MAJOR.$VERSION_MINOR.$VERSION_SUB"
         eval "git add -A"
         eval "git commit -m \"$VERSION\" -m \"$2: $3\""
+        eval "git push"
+        exit 0
     fi
 fi
 
