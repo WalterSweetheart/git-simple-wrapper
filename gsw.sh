@@ -27,13 +27,13 @@ then
         then
             eval "git init"
             eval "git add -A"
-            eval "git commit -m \"0.0.0\" -m \"break: initial commit\""
+            eval "git commit -m \"0.0.0\" -m \"break: initial commit\" --allow-empty"
             exit 0
         elif [ "$3" = "at" ] && [ -n "$4" ]
         then
             eval "git init"
             eval "git add -A"
-            eval "git commit -m \"0.0.0\" -m \"break: initnal commit\""
+            eval "git commit -m \"0.0.0\" -m \"break: initnal commit\" --allow-empty"
             eval "git remote add origin $4"
             eval "git push --set-upstream origin main --force"
             exit 0
