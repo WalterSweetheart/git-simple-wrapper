@@ -1,0 +1,23 @@
+# GSW -- GIT SIMPLE WRAPPER by WalterSweetheart
+Just a simple bash wrapper to make git easy.
+
+## USAGE
+```
+GSW -- git simple wrapper by WalterSweetheart
+Usage: gsw
+           set <setting> to <value>  -- sets setting to value in git config
+           show
+                history    -- shows git log
+                settings   -- shows setting list
+                <setting>  -- shows setting value
+           create repo
+                       locally  -- creates new git repo and initial commit
+                       at <link>  -- creates new repo, initial commit, connects to repo and pushes with force
+                       from <link>  -- erases all files and clones repo
+           connect to <link>  -- connect to repo and pushes with force
+           add
+               break <message>  -- makes major break commit and pushes it
+               feat  <message>  -- makes minor feat commit and pushes it
+               fix   <message>  -- makes sub fix commit and pushes it
+               docs  <message>  -- makes docs commit and pushes it
+```
